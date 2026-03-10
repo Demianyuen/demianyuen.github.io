@@ -5,35 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- SEO Meta Tags -->
-    <title>Demian's Blog - 獨立觀察與深度思考</title>
-    <meta name="description" content="深度觀察、社會透視、趨勢分析。每日更新，帶給你獨特的觀點與思考。">
-    <meta name="keywords" content="部落格,評論,社會觀察,趨勢分析,深度思考">
+    <!-- SEO Meta Tags - AI搞錢實驗室 -->
+    <title>AI搞錢實驗室 | 從AI賺錢、自動化變現到被動收入</title>
+    <meta name="description" content="分享AI賺錢方法、OpenClaw變現攻略、被動收入打造。從零開始教你用AI實現財務自由。每日更新，適合想透過AI賺錢的普通人。">
+    <meta name="keywords" content="AI賺錢,OpenClaw,被動收入,FIRE運動,數位游牧,AI變現,自動化賺錢,AI助手,AI工具教學,2026 AI">
     <meta name="author" content="Demian">
     <meta name="robots" content="index, follow">
+    <meta name="publish_date" content="2026-03-10">
+    <meta name="language" content="Chinese, Traditional">
     
-    <!-- Open Graph -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://demianyuen-blog.vercel.app">
+    
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Demian's Blog - 獨立觀察與深度思考">
-    <meta property="og:description" content="深度觀察、社會透視、趨勢分析。每日更新，帶給你獨特的觀點與思考。">
-    <meta property="og:image" content="https://demianyuen.github.io/images/og-default.jpg">
-    <meta property="og:url" content="https://demianyuen.github.io">
-    <meta property="og:site_name" content="Demian's Blog">
+    <meta property="og:title" content="AI搞錢實驗室 | 從AI賺錢到被動收入">
+    <meta property="og:description" content="分享AI賺錢方法、OpenClaw變現攻略、被動收入打造。從零開始教你用AI實現財務自由。">
+    <meta property="og:image" content="https://demianyuen-blog.vercel.app/images/og-default.jpg">
+    <meta property="og:url" content="https://demianyuen-blog.vercel.app">
+    <meta property="og:site_name" content="AI搞錢實驗室">
+    <meta property="og:locale" content="zh_TW">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Demian's Blog">
-    <meta name="twitter:description" content="深度觀察與深度思考">
+    <meta name="twitter:title" content="AI搞錢實驗室">
+    <meta name="twitter:description" content="從AI賺錢到被動收入 | OpenClaw變現攻略">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI搞錢實驗室",
+        "description": "分享AI賺錢方法、OpenClaw變現攻略、被動收入打造",
+        "url": "https://demianyuen-blog.vercel.app",
+        "author": {
+            "@type": "Person",
+            "name": "Demian"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "AI搞錢實驗室"
+        }
+    }
+    </script>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Google AdSense -->
+    <!-- Google AdSense - Replace with your actual AdSense ID -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -41,7 +66,7 @@
     <header class="site-header">
         <div class="container">
             <div class="header-content">
-                <a href="/" class="site-logo">Demian's Blog</a>
+                <a href="/" class="site-logo">AI搞錢實驗室</a>
                 <nav class="main-nav">
                     <a href="/">首頁</a>
                     <a href="/articles.html">文章</a>
@@ -56,10 +81,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">獨立觀察 · 深度思考</h1>
-            <p class="hero-subtitle">探索社會現象背后的真相，分享獨特觀點與思考</p>
+            <h1 class="hero-title">從 AI 賺錢到被動收入</h1>
+            <p class="hero-subtitle">分享 OpenClaw 變現攻略、AI 工具教學、被動收入打造策略</p>
             <div class="hero-search">
-                <input type="text" id="searchInput" placeholder="搜尋文章..." onkeyup="searchArticles()">
+<input type="text" id="searchInput" placeholder="搜尋文章（OpenClaw、AI賺錢、被動收入）..." onkeyup="searchArticles()">
             </div>
         </div>
     </section>
@@ -67,7 +92,7 @@
     <!-- Featured Article -->
     <section class="featured-section">
         <div class="container">
-            <h2 class="section-title">最新文章</h2>
+            <h2 class="section-title">🔥 熱門文章</h2>
             <article class="featured-article" id="featuredArticle">
                 <!-- Featured article will be loaded dynamically -->
             </article>
@@ -77,9 +102,25 @@
     <!-- Articles Grid -->
     <section class="articles-section">
         <div class="container">
-            <h2 class="section-title">所有文章</h2>
+            <h2 class="section-title">📚 所有文章</h2>
             <div class="articles-grid" id="articlesGrid">
                 <!-- Articles will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">🏷️ 熱門標籤</h2>
+            <div class="tags-cloud">
+                <a href="/?tag=openclaw" class="tag">OpenClaw 變現</a>
+                <a href="/?tag=ai" class="tag">AI 賺錢</a>
+                <a href="/?tag=passive" class="tag">被動收入</a>
+                <a href="/?tag=fire" class="tag">FIRE 運動</a>
+                <a href="/?tag=digital" class="tag">數位游牧</a>
+                <a href="/?tag=ai-tools" class="tag">AI 工具</a>
+                <a href="/?tag=2026" class="tag">2026 AI</a>
             </div>
         </div>
     </section>
@@ -88,13 +129,13 @@
     <section class="newsletter-section">
         <div class="container">
             <div class="newsletter-box">
-<h3>訂閱最新文章</h3>
-                <p>每週精選內容，直接送到你的信箱</p>
+                <h3>📧 訂閱 AI 賺錢攻略</h3>
+                <p>每週精選 AI 變現技巧、被動收入策略，直接送到你的信箱</p>
                 <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
                     <input type="email" placeholder="輸入你的 Email" required>
-                    <button type="submit">訂閱</button>
+                    <button type="submit">免費訂閱</button>
                 </form>
-                <p class="newsletter-note">訂閱人數：<span id="subscriberCount">1,247</span></p>
+                <p class="newsletter-note">📈 訂閱人數：<span id="subscriberCount">1,247</span> 人</p>
             </div>
         </div>
     </section>
@@ -104,9 +145,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>關於</h4>
-                    <p>Demian's Blog - 獨立觀察與深度思考</p>
-                    <p>每日更新，帶給你獨特的觀點</p>
+                    <h4>關於 AI搞錢實驗室</h4>
+                    <p>分享 AI 賺錢方法、OpenClaw 變現攻略、被動收入打造。幫助普通人用 AI 實現財務自由。</p>
                 </div>
                 <div class="footer-section">
                     <h4>快速連結</h4>
@@ -118,17 +158,25 @@
                     </ul>
                 </div>
                 <div class="footer-section">
+                    <h4>熱門文章</h4>
+                    <ul>
+                        <li><a href="/article.html?slug=openclaw-monetization">OpenClaw 5 大變現模式</a></li>
+                        <li><a href="/article.html?slug=ai-models-2026">2026 AI 模型比較</a></li>
+                        <li><a href="/article.html?slug=openclaw-install">OpenClaw 一鍵安裝</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <h4>社交媒體</h4>
                     <div class="social-links">
                         <a href="https://twitter.com/" target="_blank">Twitter</a>
                         <a href="https://facebook.com/" target="_blank">Facebook</a>
-                        <a href="https://instagram.com/" target="_blank">Instagram</a>
+                        <a href="https://youtube.com/" target="_blank">YouTube</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Demian's Blog. All rights reserved.</p>
-                <p>Powered by GitHub Pages</p>
+                <p>&copy; 2026 AI搞錢實驗室. All rights reserved.</p>
+                <p>🔗 GitHub: <a href="https://github.com/Demianyuen/demianyuen.github.io" target="_blank" style="color:#fff">Demianyuen</a> | 🚀 Hosted on Vercel</p>
             </div>
         </div>
     </footer>
