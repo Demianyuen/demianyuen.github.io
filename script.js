@@ -1,80 +1,134 @@
 /* ===================================
-   Demian's Blog - JavaScript
+   AI搞錢實驗室 - JavaScript
    =================================== */
 
-// Article Data - This will be synced from Notion
+// Article Data - All Articles for the Blog
 const articles = [
+    // Article 1: OpenClaw Introduction
     {
         id: 1,
-        title: "為何人類天生不愛上班：從普魯士教育到現代勞動的困境與突圍",
-        slug: "why-humans-dont-like-work",
-        excerpt: "全球數十億人每天都在上演同樣的劇情——我們把生命中最精華的時間奉獻給那些讓我們感到空虛的工作。這個問題的答案，或許比你想的還要更深、更黑暗。",
+        title: "OpenClaw 是什麼？為何它能讓你賺錢？",
+        slug: "openclaw-intro",
+        excerpt: "2026年爆紅的開源AI框架「小龍蝦」席捲全球！它如何讓普通人實現自動化賺錢？",
         content: "完整文章內容...",
-        category: "社會觀察",
+        category: "OpenClaw 教學",
         date: "2026-03-10",
         author: "Demian",
-        image: "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&h=500&fit=crop",
-        readTime: "8 分鐘"
+        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop",
+        readTime: "5 分鐘",
+        tags: ["OpenClaw", "AI賺錢", "自動化"]
     },
+    // Article 2: OpenClaw 變現模式
     {
         id: 2,
-        title: "躺平背後的真相：年輕人為何選擇退出競爭",
-        slug: "why-young-people-choose-to-lie-flat",
-        excerpt: "當努力不再有意義，覺醒便成了唯一的出路。躺平不是逃避，而是對現有社會規則的無聲抗爭。",
+        title: "OpenClaw 5 大變現模式：從月薪 3 千到年入百萬",
+        slug: "openclaw-monetization",
+        excerpt: "代部署、模板銷售、培訓、諮詢、自動化系統——5 種經過驗證的賺錢方法詳細拆解",
         content: "完整文章內容...",
-        category: "社會觀察",
+        category: "變現攻略",
         date: "2026-03-09",
         author: "Demian",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=500&fit=crop",
-        readTime: "6 分鐘"
+        image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=500&fit=crop",
+        readTime: "8 分鐘",
+        tags: ["OpenClaw", "變現", "賺錢"]
     },
+    // Article 3: OpenClaw 賺錢經驗
     {
         id: 3,
-        title: "FIRE運動：如何實現財務自由並提前退休",
-        slug: "fire-movement-financial-independence",
-        excerpt: "FIRE代表財務獨立、提早退休。透過極簡生活與高效投資，越來越多人在三四十歲時實現了真正的自由。",
+        title: "從 0 到月入 3000：我的 OpenClaw 賺錢之旅",
+        slug: "openclaw-income-story",
+        excerpt: "真實案例分享：如何用 OpenClaw 搭建自動化系統，每月穩定收入 3000+",
         content: "完整文章內容...",
-        category: "理財觀念",
+        category: "賺錢經驗",
         date: "2026-03-08",
         author: "Demian",
-        image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=500&fit=crop",
-        readTime: "10 分鐘"
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
+        readTime: "6 分鐘",
+        tags: ["OpenClaw", "被動收入", "案例"]
     },
+    // Article 4: OpenClaw 安全問題
     {
         id: 4,
-        title: "數字遊牧：在大海中工作，在世界角落生活",
-        slug: "digital-nomad-lifestyle",
-        excerpt: "他們在巴厘島的海灘上寫代碼，在布宜諾斯艾利斯的咖啡廳裡做設計。數字遊牧正在重新定義工作的意義。",
+        title: "OpenClaw 安全嗎？3 個你必須注意的風險",
+        slug: "openclaw-safety",
+        excerpt: "資金安全、隱私保護、合規性——使用 OpenClaw 前必須知道的關鍵事項",
         content: "完整文章內容...",
-        category: "生活方式",
+        category: "安全須知",
         date: "2026-03-07",
         author: "Demian",
-        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=500&fit=crop",
-        readTime: "7 分鐘"
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop",
+        readTime: "5 分鐘",
+        tags: ["OpenClaw", "安全", "風險"]
     },
+    // Article 5: OpenClaw vs 傳統 AI
     {
         id: 5,
-        title: "零工經濟：自由與焦慮的雙面刃",
-        slug: "gig-economy-freedom-anxiety",
-        excerpt: "擺脫了傳統的勞資僱傭關係，卻迎來了收入的不穩定。零工經濟到底是解放還是另一種束縛？",
+        title: "OpenClaw vs 傳統 AI工具：為何它是未來趨勢",
+        slug: "openclaw-vs-traditional",
+        excerpt: "執行型 AI 席捲全球！OpenClaw 如何顛覆傳統 AI 應用，成為 2026 年最大風口？",
         content: "完整文章內容...",
-        category: "職場觀察",
+        category: "趨勢分析",
         date: "2026-03-06",
         author: "Demian",
-        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=500&fit=crop",
-        readTime: "8 分鐘"
+        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=500&fit=crop",
+        readTime: "7 分鐘",
+        tags: ["OpenClaw", "趨勢", "AI"]
     },
+    // Article 6: OpenClaw 一鍵安裝
     {
         id: 6,
-        title: "內卷：當每個人都拼命向前，卻沒有人真正前進",
-        slug: "involution-never-end-race",
-        excerpt: "內卷描述的是一種集體困境：每個人都加倍努力，但回報卻沒有相應增加。這是系統性問題還是個人選擇？",
+        title: "OpenClaw 一鍵安裝教學：5 分鐘搞定你的私人 AI 助理",
+        slug: "openclaw-install",
+        excerpt: "超詳細圖文教學！從環境準備到連接 Telegram/Discord，5 分鐘快速上手",
         content: "完整文章內容...",
-        category: "社會觀察",
+        category: "安裝教學",
         date: "2026-03-05",
         author: "Demian",
-        image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=500&fit=crop",
-        readTime: "9 分鐘"
+        image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&h=500&fit=crop",
+        readTime: "10 分鐘",
+        tags: ["OpenClaw", "安裝", "教學"]
+    },
+    // Article 7: AI 模型比較
+    {
+        id: 7,
+        title: "2026 年最強 AI 模型對比：GPT-5.2 vs Claude Opus 4.6 vs Gemini 3 Pro",
+        slug: "ai-models-2026",
+        excerpt: "深度評測 2026 三大旗艦 AI 模型：編碼、推理、寫作、多模態能力全面對比",
+        content: "完整文章內容...",
+        category: "AI 評測",
+        date: "2026-03-04",
+        author: "Demian",
+        image: "https://images.unsplash.com/photo-1676299081847-824916de030a?w=800&h=500&fit=crop",
+        readTime: "12 分鐘",
+        tags: ["AI", "GPT-5", "Claude", "Gemini", "2026"]
+    },
+    // Article 8: 個人 AI 助手推薦
+    {
+        id: 8,
+        title: "個人 AI 助手哪個好？2026 適合普通人的 AI 工具推薦",
+        slug: "ai-assistant-recommend",
+        excerpt: "從免費到付費，從寫作到編碼——最適合普通人的 AI 助手完整推薦指南",
+        content: "完整文章內容...",
+        category: "AI 推薦",
+        date: "2026-03-03",
+        author: "Demian",
+        image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&h=500&fit=crop",
+        readTime: "8 分鐘",
+        tags: ["AI助手", "推薦", "工具"]
+    },
+    // Original Article: Why Humans Don't Like Work
+    {
+        id: 9,
+        title: "為何人類天生不愛上班：從普魯士教育到現代勞動的困境與突圍",
+        slug: "why-humans-dont-like-work",
+        excerpt: "深度分析現代人工作痛苦的根源：狗屁工作、職業倦怠、內卷，以及突圍的可能性",
+        content: "完整文章內容...",
+        category: "社會觀察",
+        date: "2026-03-02",
+        author: "Demian",
+        image: "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&h=500&fit=crop",
+        readTime: "8 分鐘",
+        tags: ["工作", "職業倦怠", "FIRE"]
     }
 ];
 
@@ -83,9 +137,10 @@ document.addEventListener('DOMContentLoaded', function() {
     loadFeaturedArticle();
     loadArticles();
     updateSubscriberCount();
+    updatePageTitle();
 });
 
-// Load featured article
+// Load featured article (most recent)
 function loadFeaturedArticle() {
     const featuredContainer = document.getElementById('featuredArticle');
     if (!featuredContainer) return;
@@ -101,9 +156,12 @@ function loadFeaturedArticle() {
             </h3>
             <p class="featured-excerpt">${featured.excerpt}</p>
             <div class="featured-meta">
-                <span>${featured.date}</span>
-                <span>${featured.readTime}</span>
-                <span>${featured.author}</span>
+                <span>📅 ${featured.date}</span>
+                <span>⏱️ ${featured.readTime}</span>
+                <span>✍️ ${featured.author}</span>
+            </div>
+            <div class="article-tags" style="margin-top: 15px;">
+                ${featured.tags.map(tag => `<span class="tag" style="background: #f0f0f0; padding: 3px 10px; font-size: 12px; border-radius: 15px; margin-right: 8px;">#${tag}</span>`).join('')}
             </div>
         </div>
     `;
@@ -114,15 +172,12 @@ function loadArticles() {
     const articlesContainer = document.getElementById('articlesGrid');
     if (!articlesContainer) return;
     
-    // Skip the first article (it's the featured one)
-    const articlesList = articles.slice(1);
-    
-    if (articlesList.length === 0) {
+    if (articles.length === 0) {
         articlesContainer.innerHTML = '<div class="no-results">暫無文章</div>';
         return;
     }
     
-    articlesContainer.innerHTML = articlesList.map(article => `
+    articlesContainer.innerHTML = articles.map(article => `
         <article class="article-card">
             <div class="article-image" style="background-image: url('${article.image}')"></div>
             <div class="article-content">
@@ -150,11 +205,12 @@ function searchArticles() {
     const filteredArticles = articles.filter(article => 
         article.title.toLowerCase().includes(searchTerm) ||
         article.excerpt.toLowerCase().includes(searchTerm) ||
-        article.category.toLowerCase().includes(searchTerm)
+        article.category.toLowerCase().includes(searchTerm) ||
+        article.tags.some(tag => tag.toLowerCase().includes(searchTerm))
     );
     
     if (filteredArticles.length === 0) {
-        articlesContainer.innerHTML = '<divclass="no-results">沒有找到相關文章</div>';
+        articlesContainer.innerHTML = '<div class="no-results">沒有找到相關文章，試試其他關鍵詞？</div>';
         return;
     }
     
@@ -176,6 +232,16 @@ function searchArticles() {
     `).join('');
 }
 
+// Update page title based on URL
+function updatePageTitle() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tag = urlParams.get('tag');
+    
+    if (tag) {
+        document.title = `#${tag} - AI搞錢實驗室`;
+    }
+}
+
 // Mobile menu toggle
 function toggleMobileMenu() {
     const nav = document.querySelector('.main-nav');
@@ -187,8 +253,8 @@ function subscribeNewsletter(event) {
     event.preventDefault();
     const email = event.target.querySelector('input').value;
     
-    // Here you would integrate with a service like Mailchimp, Substack, etc.
-    alert(`感謝訂閱！${email} 已加入我們的 mailing list。`);
+    // Here you would integrate with a service like Mailchimp, Substack, ConvertKit, etc.
+    alert(`感謝訂閱！${email} 已加入 AI搞錢實驗室 的 mailing list。\n\n你將每週收到最新的 AI 變現攻略！`);
     event.target.reset();
 }
 
@@ -220,19 +286,26 @@ function loadArticlePage() {
     }
     
     // Update page content
-    document.title = `${article.title} - Demian's Blog`;
+    document.title = `${article.title} - AI搞錢實驗室`;
     document.querySelector('.featured-title').textContent = article.title;
     document.querySelector('.featured-image').style.backgroundImage = `url('${article.image}')`;
     document.querySelector('.featured-meta').innerHTML = `
-        <span>${article.date}</span>
-        <span>${article.readTime}</span>
-        <span>${article.author}</span>
+        <span>📅 ${article.date}</span>
+        <span>⏱️ ${article.readTime}</span>
+        <span>✍️ ${article.author}</span>
     `;
+    
+    // Add tags
+    const tagsHtml = article.tags.map(tag => `<span class="tag" style="background: #f0f0f0; padding: 5px 12px; font-size: 13px; border-radius: 15px; margin-right: 8px;">#${tag}</span>`).join('');
     
     // In a real app, you would load the full content from a markdown file or API
     document.querySelector('.featured-content').innerHTML = `
-        <p>${article.excerpt}</p>
-        <p>（完整文章內容加載中...）</p>
+        <span class="featured-tag">${article.category}</span>
+        <p style="font-size: 18px; line-height: 1.8; margin: 20px 0;">${article.excerpt}</p>
+        <p style="line-height: 2;">${article.content}</p>
+        <div style="margin-top: 30px;">
+            <strong>🏷️ 標籤：</strong>${tagsHtml}
+        </div>
     `;
 }
 
@@ -271,4 +344,9 @@ function copyLink() {
 // Initialize article page if on article.html
 if (window.location.pathname.includes('article.html')) {
     document.addEventListener('DOMContentLoaded', loadArticlePage);
+}
+
+// Export articles for use in other files
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { articles };
 }
